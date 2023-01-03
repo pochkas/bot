@@ -1,0 +1,4 @@
+io\project\AviaticketsBot\service\TelegramBot.class
+io\project\AviaticketsBot\config\BotConfig.class
+io\project\AviaticketsBot\AviaticketsBotApplication.class
+io\project\AviaticketsBot\config\BotInitializer.class
