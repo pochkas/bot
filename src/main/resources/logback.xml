@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d [%thread] %-5level  %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
 
-    <property name="HOME_LOG" value="/var/log/project.io/aviaticketsBot/app.log"/>
 
     <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${HOME_LOG}</file>
@@ -21,16 +25,9 @@
         </encoder>
     </appender>
 
-    <logger name="io.project.AviaticketsBot" level="debug" additivity="false">
-        <appender-ref ref="FILE-ROLLING"/>
-    </logger>
 
-    <root level="error">
-        <appender-ref ref="FILE-ROLLING"/>
+    <root level="INFO">
+        <appender-ref ref="FILE-ROLLING" />
+        <appender-ref ref="STDOUT" />
     </root>
-
-    <root level="info">
-        <appender-ref ref="FILE-ROLLING"/>
-    </root>
-
 </configuration>
