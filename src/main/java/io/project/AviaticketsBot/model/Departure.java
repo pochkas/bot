@@ -1,19 +1,17 @@
-package io.project.AviaticketsBot.service;
+package io.project.AviaticketsBot.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.*;
 
-public class Departure {
-    @JsonProperty("passengerLocalTime")
+import java.io.Serializable;
+@NoArgsConstructor
+@Getter
+
+public class Departure implements Serializable {
+
     String passengerLocalTime;
     String date;
     String terminal;
 
-
-    public Departure(String passengerLocalTime, String date, String terminal) {
-        this.passengerLocalTime = passengerLocalTime;
-        this.date = date;
-        this.terminal = terminal;
-    }
 
     public String getPassengerLocalTime() {
         return passengerLocalTime;
@@ -41,7 +39,7 @@ public class Departure {
 
     @Override
     public String toString(){
-        return getPassengerLocalTime() + ", "+getDate()+", "+getTerminal();
+        return getPassengerLocalTime() + ", "+"terminal="+getTerminal();
     }
 
 }

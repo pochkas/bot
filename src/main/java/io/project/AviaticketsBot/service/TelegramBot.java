@@ -4,10 +4,12 @@ package io.project.AviaticketsBot.service;
 
 import com.vdurmont.emoji.EmojiParser;
 import io.project.AviaticketsBot.config.BotConfig;
+import io.project.AviaticketsBot.model.Data;
+import io.project.AviaticketsBot.model.FlightResponse;
 import lombok.extern.slf4j.Slf4j;
 
 
-import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -35,6 +37,9 @@ public class TelegramBot extends TelegramLongPollingBot {
 
 
     final BotConfig botConfig;
+
+    @Autowired
+    private  FlightService flightService;
 
     static final String HELP_TEXT = "How to use bot?\n\n" +
             " You can execute commands from the main menu on the left or by typing a command:\n\n" +
@@ -94,14 +99,16 @@ public class TelegramBot extends TelegramLongPollingBot {
                 String chatIdUser = inputMessage.getChatId().toString();
                 //Получаем текст сообщения пользователя, отправляем в написанный нами обработчик
                 String response = parseMessage(inputMessage.getText());
-                ResponseEntity<Data> responseEntity=getFlights(response);
+                FlightResponse flightData=flightService.getFlights(response);
 
-               log.info(responseEntity.toString());
-               log.info(responseEntity.getBody().toString());
-               // log.info(parser(responseEntity));
-               // log.info(responseEntity.getBody().toString());
-                //Создаем объект класса SendMessage - наш будущий ответ пользователю
-                sendMessage(chatId, responseEntity.getBody().toString());
+                List<String> list=new ArrayList<>();
+                for(int i=0; i<flightData.data.length;i++) {
+                    list.add(flightData.data[i].toString()+"\n");
+                }
+
+                for(String l:list) {
+                    sendMessage(chatId, l);
+                }
 
             } else {
 
@@ -117,7 +124,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
         String answer = EmojiParser.parseToUnicode("Hello, " + name + ", nice to meet you!" + " :grinning:\n\n" +
                 "I use only airport name contains 3 letters\n\n" +
-                "example: LGW IST 2023.01.12)");
+                "example: /fromtodate LGW IST 2023-01-12");
 
 
         log.info("Replied to user " + name);
@@ -153,26 +160,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     }
 
-    private ResponseEntity<Data> getFlights(String url) {
-        RestTemplate restTemplate = new RestTemplate();
-        log.info(url);
-        HttpHeaders headers = new HttpHeaders();
 
-        headers.set("X-RapidAPI-Key", "5ca7009191mshfa48d28547bda93p1a28aejsn41c50e9f3632");
-        headers.set("X-RapidAPI-Host", "flight-info-api.p.rapidapi.com");
-
-
-        HttpEntity request = new HttpEntity(headers);
-
-
-        return restTemplate.exchange(
-                url,
-                HttpMethod.GET,
-                request,
-                Data.class
-        );
-
-    }
 
     public String parseMessage(String textMessage) {
 

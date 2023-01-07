@@ -1,20 +1,19 @@
-package io.project.AviaticketsBot.service;
+package io.project.AviaticketsBot.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.io.Serializable;
 
-@Getter
-@AllArgsConstructor
 @NoArgsConstructor
+@Getter
+
 public class Data implements Serializable {
 
 
     int flightNumber;
     int sequenceNumber;
     Departure departure;
+
     public Departure getDeparture() {
         return departure;
     }
@@ -22,13 +21,6 @@ public class Data implements Serializable {
     public void setDeparture(Departure departure) {
         this.departure = departure;
     }
-
-
-//    public Data(int flightNumber, int sequenceNumber, Departure departure) {
-//        this.departure = departure;
-//        this.flightNumber = flightNumber;
-//        this.sequenceNumber = sequenceNumber;
-//    }
 
 
     public int getFlightNumber() {
@@ -49,10 +41,9 @@ public class Data implements Serializable {
 
     @Override
     public String toString() {
-        return "Data{" +
+        return "Flights: " +
                 "departure=" + getDeparture() +
                 ", flightNumber=" + getFlightNumber() +
-                ", sequenceNumber=" + getSequenceNumber() +
-                '}';
+                ";";
     }
 }
