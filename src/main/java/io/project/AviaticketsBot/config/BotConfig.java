@@ -14,7 +14,10 @@ public class BotConfig {
     String botName;
     @Value("${bot.token}")
     String token;
-
+    @Value("${bot.rapidApiKey}")
+    String rapidApiKey;
+    @Value("${bot.rapidApiHost}")
+    String rapidApiHost;
 
 
 

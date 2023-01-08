@@ -1,10 +1,13 @@
 package io.project.AviaticketsBot.service.implementation;
 
-import io.project.AviaticketsBot.model.Data;
+import io.project.AviaticketsBot.config.BotConfig;
 import io.project.AviaticketsBot.model.FlightResponse;
 import io.project.AviaticketsBot.service.FlightService;
 import lombok.*;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -14,8 +17,14 @@ import org.springframework.web.client.RestTemplate;
 
 @Slf4j
 @Component
-
+@Configuration
 public class FlightServiceImpl implements FlightService {
+
+    BotConfig botConfig;
+
+    public FlightServiceImpl(BotConfig botConfig) {
+        this.botConfig = botConfig;
+    }
 
 
     @Override
@@ -26,8 +35,10 @@ public class FlightServiceImpl implements FlightService {
         log.info(url);
         HttpHeaders headers = new HttpHeaders();
 
-        headers.set("X-RapidAPI-Key", "5ca7009191mshfa48d28547bda93p1a28aejsn41c50e9f3632");
-        headers.set("X-RapidAPI-Host", "flight-info-api.p.rapidapi.com");
+
+
+        headers.set("X-RapidAPI-Key", botConfig.getRapidApiKey());
+        headers.set("X-RapidAPI-Host", botConfig.getRapidApiHost());
 
 
         HttpEntity request = new HttpEntity(headers);
