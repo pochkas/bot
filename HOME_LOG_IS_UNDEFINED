@@ -1,152 +1,112 @@
-2023-01-08 18:00:13,205 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 9604 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 18:00:13,210 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 18:00:13,993 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 18:00:14,001 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:00:14,001 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 18:00:14,002 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 18:00:14,101 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 18:00:14,101 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 838 ms
-2023-01-08 18:00:14,935 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:00:14,947 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate
-2023-01-08 18:00:14,949 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Executor] Index 1 out of bounds for length 1
+2023-01-09 13:36:44,321 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 18428 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
+2023-01-09 13:36:44,325 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-09 13:36:45,195 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-09 13:36:45,204 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-09 13:36:45,205 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-01-09 13:36:45,205 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-09 13:36:45,305 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-01-09 13:36:45,305 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 920 ms
+2023-01-09 13:36:46,048 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0start
+2023-01-09 13:36:46,074 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-01-09 13:36:46,115 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-09 13:36:46,115 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Replied to user Svetlana
+2023-01-09 13:36:46,133 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 2.16 seconds (JVM running for 2.726)
+2023-01-09 13:36:46,182 INFO io.project.AviaticketsBot.service.PingTask [scheduling-1] Ping OK
+2023-01-09 13:36:59,877 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate
+2023-01-09 13:36:59,880 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Executor] Index 1 out of bounds for length 1
 java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at io.project.AviaticketsBot.service.TelegramBot.parseMessage(TelegramBot.java:169)
-	at io.project.AviaticketsBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:101)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
-	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
-2023-01-08 18:00:14,953 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 18:00:14,960 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 2.034 seconds (JVM running for 2.583)
-2023-01-08 18:00:18,219 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 18:00:18,226 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 18:11:36,969 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Config data resource 'class path resource [src/main/resources/secret.properties]' via location 'src/main/resources/secret.properties' does not exist
-
-Action:
-
-Check that the value 'src/main/resources/secret.properties' at class path resource [application.properties] - 1:22 is correct, or prefix it with 'optional:'
-
-2023-01-08 18:11:59,897 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 13628 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 18:11:59,899 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 18:12:00,572 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 18:12:00,579 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:12:00,579 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 18:12:00,579 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 18:12:00,652 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 18:12:00,653 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 711 ms
-2023-01-08 18:12:01,432 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:12:01,451 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 18:12:01,460 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.821 seconds (JVM running for 2.214)
-2023-01-08 18:12:09,708 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 18:12:09,715 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 18:13:48,314 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 22824 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 18:13:48,316 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 18:13:48,999 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 18:13:49,006 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:13:49,006 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 18:13:49,006 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 18:13:49,079 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 18:13:49,080 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 720 ms
-2023-01-08 18:13:49,811 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:13:49,828 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 18:13:49,838 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.78 seconds (JVM running for 2.17)
-2023-01-08 18:13:56,825 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 18:13:56,833 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 18:13:57,299 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Executor] 401 Unauthorized: "{"message":"Invalid API key. Go to https:\/\/docs.rapidapi.com\/docs\/keys for more info."}"
-org.springframework.web.client.HttpClientErrorException$Unauthorized: 401 Unauthorized: "{"message":"Invalid API key. Go to https:\/\/docs.rapidapi.com\/docs\/keys for more info."}"
-	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:105)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
-	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
-	at io.project.AviaticketsBot.service.implementation.FlightServiceImpl.getFlights(FlightServiceImpl.java:36)
+	at io.project.AviaticketsBot.service.TelegramBot.parseMessage(TelegramBot.java:170)
 	at io.project.AviaticketsBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:102)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
 	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
-2023-01-08 18:14:32,130 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 16544 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 18:14:32,132 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 18:14:32,840 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 18:14:32,848 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:14:32,848 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 18:14:32,848 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 18:14:32,925 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 18:14:32,925 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 751 ms
-2023-01-08 18:14:33,680 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:14:33,696 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 18:14:33,704 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.839 seconds (JVM running for 2.244)
-2023-01-08 18:14:40,200 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 18:14:40,207 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 18:14:40,620 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Executor] 401 Unauthorized: "{"message":"Invalid API key. Go to https:\/\/docs.rapidapi.com\/docs\/keys for more info."}"
-org.springframework.web.client.HttpClientErrorException$Unauthorized: 401 Unauthorized: "{"message":"Invalid API key. Go to https:\/\/docs.rapidapi.com\/docs\/keys for more info."}"
-	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:105)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
-	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
-	at io.project.AviaticketsBot.service.implementation.FlightServiceImpl.getFlights(FlightServiceImpl.java:36)
-	at io.project.AviaticketsBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:102)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
-	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
-2023-01-08 19:08:22,484 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 2664 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 19:08:22,487 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 19:08:23,796 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 19:08:23,810 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 19:08:23,811 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 19:08:23,811 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 19:08:23,941 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 19:08:23,942 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1366 ms
-2023-01-08 19:08:25,209 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 19:08:25,234 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 19:08:25,245 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 3.295 seconds (JVM running for 4.038)
-2023-01-08 19:08:27,474 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 19:08:27,488 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 19:08:27,494 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Executor] Cannot invoke "io.project.AviaticketsBot.config.BotConfig.getRapidApiKey()" because "this.botConfig" is null
-java.lang.NullPointerException: Cannot invoke "io.project.AviaticketsBot.config.BotConfig.getRapidApiKey()" because "this.botConfig" is null
-	at io.project.AviaticketsBot.service.implementation.FlightServiceImpl.getFlights(FlightServiceImpl.java:44)
-	at io.project.AviaticketsBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:102)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
-	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
-2023-01-08 19:14:34,336 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 20428 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 19:14:34,338 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 19:14:35,032 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 19:14:35,041 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 19:14:35,041 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 19:14:35,041 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 19:14:35,122 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 19:14:35,122 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 745 ms
-2023-01-08 19:14:35,842 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 19:14:35,857 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 19:14:35,864 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.811 seconds (JVM running for 2.199)
-2023-01-08 19:14:41,162 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 19:14:41,167 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 19:17:05,837 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 10564 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 19:17:05,839 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 19:17:06,533 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 19:17:06,540 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 19:17:06,540 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 19:17:06,540 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 19:17:06,615 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 19:17:06,616 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 737 ms
-2023-01-08 19:17:07,490 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 19:17:07,514 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 19:17:07,525 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.946 seconds (JVM running for 2.327)
-2023-01-08 19:17:12,081 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 19:17:12,087 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 19:17:29,038 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate IST LGW 2023-01-12
-2023-01-08 19:17:29,041 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=IST&ArrivalAirport=LGW
+2023-01-09 13:37:08,919 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
+2023-01-09 13:37:08,931 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
+2023-01-09 14:10:54,529 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 25780 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
+2023-01-09 14:10:54,531 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-09 14:10:55,206 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-09 14:10:55,213 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:10:55,213 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-01-09 14:10:55,213 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-09 14:10:55,297 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-01-09 14:10:55,297 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 728 ms
+2023-01-09 14:10:56,010 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:10:56,024 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-09 14:10:56,032 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.737 seconds (JVM running for 2.082)
+2023-01-09 14:10:56,075 INFO io.project.AviaticketsBot.service.PingTask [scheduling-1] Ping OK
+2023-01-09 14:11:09,621 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0start
+2023-01-09 14:11:09,695 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Replied to user Svetlana
+2023-01-09 14:11:19,392 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
+2023-01-09 14:11:19,400 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
+2023-01-09 14:14:00,938 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 1936 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
+2023-01-09 14:14:00,940 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-09 14:14:01,606 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-09 14:14:01,614 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:14:01,614 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-01-09 14:14:01,614 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-09 14:14:01,694 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-01-09 14:14:01,695 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 715 ms
+2023-01-09 14:14:02,435 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:14:02,450 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-09 14:14:02,460 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.772 seconds (JVM running for 2.145)
+2023-01-09 14:14:02,500 INFO io.project.AviaticketsBot.service.PingTask [scheduling-1] Ping OK
+2023-01-09 14:18:10,910 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 21536 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
+2023-01-09 14:18:10,913 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-09 14:18:11,661 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-09 14:18:11,668 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:18:11,668 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-01-09 14:18:11,669 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-09 14:18:11,758 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-01-09 14:18:11,758 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 799 ms
+2023-01-09 14:18:12,459 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:18:12,478 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-09 14:18:12,487 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.843 seconds (JVM running for 2.205)
+2023-01-09 14:18:12,529 INFO io.project.AviaticketsBot.service.PingTask [scheduling-1] Ping OK
+2023-01-09 14:20:40,411 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 4192 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
+2023-01-09 14:20:40,413 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-09 14:20:41,053 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-09 14:20:41,060 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:20:41,061 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-01-09 14:20:41,061 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-09 14:20:41,161 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-01-09 14:20:41,161 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 709 ms
+2023-01-09 14:20:41,874 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:20:41,890 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-09 14:20:41,899 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.724 seconds (JVM running for 2.078)
+2023-01-09 14:20:41,937 INFO io.project.AviaticketsBot.service.PingTask [scheduling-1] Ping OK
+2023-01-09 14:51:07,464 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 2740 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
+2023-01-09 14:51:07,466 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-09 14:51:08,151 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-09 14:51:08,158 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:51:08,158 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-01-09 14:51:08,158 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-09 14:51:08,255 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-01-09 14:51:08,255 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 748 ms
+2023-01-09 14:51:08,976 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:51:08,992 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-09 14:51:09,001 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.799 seconds (JVM running for 2.204)
+2023-01-09 14:51:09,043 INFO io.project.AviaticketsBot.service.PingTask [scheduling-1] Ping OK
+2023-01-09 14:52:20,699 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 12736 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
+2023-01-09 14:52:20,702 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-09 14:52:21,438 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-09 14:52:21,445 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:52:21,445 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-01-09 14:52:21,445 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-09 14:52:21,525 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-01-09 14:52:21,525 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 770 ms
+2023-01-09 14:52:22,216 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:52:22,232 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-09 14:52:22,241 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.806 seconds (JVM running for 2.193)
+2023-01-09 14:52:22,281 INFO io.project.AviaticketsBot.service.PingTask [scheduling-1] Ping OK
+2023-01-09 14:59:33,241 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 3916 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
+2023-01-09 14:59:33,243 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-01-09 14:59:33,907 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-01-09 14:59:33,915 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:59:33,915 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-01-09 14:59:33,916 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-01-09 14:59:33,991 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-01-09 14:59:33,991 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 705 ms
+2023-01-09 14:59:34,735 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-01-09 14:59:34,753 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-09 14:59:34,761 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.781 seconds (JVM running for 2.138)
+2023-01-09 14:59:34,803 INFO io.project.AviaticketsBot.service.PingTask [scheduling-1] Ping OK
