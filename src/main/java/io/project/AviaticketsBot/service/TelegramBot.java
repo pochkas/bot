@@ -46,7 +46,7 @@ public class TelegramBot extends TelegramLongPollingBot {
             " You can execute commands from the main menu on the left or by typing a command:\n\n" +
             "Type /start to see a welcome message.\n\n" +
             "Type /help to see this message again\n\n" +
-            "Type /fromtodate to type departure airport (from), arrival airport (to) and a date of the flight\n\n";
+            "Type /fromtodate to type departure airport (from), arrival airport (to) and a date of the flight (yyyy-mm-dd)\n\n";
 
     public TelegramBot(BotConfig botConfig) {
         this.botConfig = botConfig;
