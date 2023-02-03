@@ -46,4 +46,26 @@ public class Data implements Serializable {
                 ", flightNumber=" + getFlightNumber() +
                 ";";
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this) {
+            return true;
+        }
+        if (!(o instanceof Data)) {
+            return false;
+        }
+        Data obj = (Data) o;
+
+        if (obj.departure == null && departure == null) {
+            return true;
+        }
+
+        if (obj.departure == null || departure == null) {
+            return false;
+        }
+
+
+        return (obj.flightNumber == flightNumber && obj.sequenceNumber == sequenceNumber && obj.departure.equals(departure));
+    }
 }

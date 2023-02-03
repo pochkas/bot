@@ -1,10 +1,11 @@
 package io.project.AviaticketsBot.service;
 
 
-
 import com.vdurmont.emoji.EmojiParser;
 import io.project.AviaticketsBot.config.BotConfig;
+import io.project.AviaticketsBot.exception.FlightsException;
 import io.project.AviaticketsBot.model.Data;
+import io.project.AviaticketsBot.model.ErrorResponse;
 import io.project.AviaticketsBot.model.FlightResponse;
 import lombok.extern.slf4j.Slf4j;
 
@@ -39,7 +40,7 @@ public class TelegramBot extends TelegramLongPollingBot {
     final BotConfig botConfig;
 
     @Autowired
-    private  FlightService flightService;
+    private FlightService flightService;
 
     static final String HELP_TEXT = "How to use bot?\n\n" +
             " You can execute commands from the main menu on the left or by typing a command:\n\n" +
@@ -76,48 +77,56 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
+        String messageText = update.getMessage().getText();
+        long chatId = update.getMessage().getChatId();
 
-        if (update.hasMessage() && update.getMessage().hasText()) {
-            String messageText = update.getMessage().getText();
-            long chatId = update.getMessage().getChatId();
+        try {
+            if (update.hasMessage() && update.getMessage().hasText()) {
 
-            String[] command = messageText.split("/");
+                if (messageText.equals("/start")) {
 
-            log.info("Commands 0" + command[1]);
+                    startCommandReceived(chatId, update.getMessage().getChat().getFirstName());
 
-            if (command[1].equals("start")) {
+                } else if (messageText.equals("/help")) {
 
-                startCommandReceived(chatId, update.getMessage().getChat().getFirstName());
+                    sendMessage(chatId, HELP_TEXT);
 
-            } else if (command[1].equals("help")) {
+                } else if (messageText.startsWith("/fromtodate")) {
 
-                sendMessage(chatId, HELP_TEXT);
+                    Message inputMessage = update.getMessage();
+                    String chatIdUser = inputMessage.getChatId().toString();
+                    String response = parseMessage(inputMessage.getText());
 
-            } else if (command[1].startsWith("fromtodate")) {
+                    try {
+                        FlightResponse flightData = flightService.getFlights(response);
+                        List<String> list = new ArrayList<>();
+                        for (int i = 0; i < flightData.data.length; i++) {
+                            list.add((i + 1 + ") ") + flightData.data[i].toString() + "\n");
+                        }
 
-                Message inputMessage = update.getMessage();
-                //Достаем из inMess id чата пользователя
-                String chatIdUser = inputMessage.getChatId().toString();
-                //Получаем текст сообщения пользователя, отправляем в написанный нами обработчик
-                String response = parseMessage(inputMessage.getText());
-                FlightResponse flightData=flightService.getFlights(response);
+                        for (String l : list) {
+                            sendMessage(chatId, l);
+                        }
 
-                List<String> list=new ArrayList<>();
-                for(int i=0; i<flightData.data.length;i++) {
-                    list.add((i+1+") ")+flightData.data[i].toString()+"\n");
+                    } catch (FlightsException e) {
+                        sendMessage(chatId, e.getMessage());
+
+                    } catch (Exception e) {
+                        sendMessage(chatId, "We have an error, try again later!");
+
+                    }
+
+
+                } else {
+
+                    sendMessage(chatId, "Could not find the command!");
+
                 }
-
-                for(String l:list) {
-                    sendMessage(chatId, l);
-                }
-
-            } else {
-
-                sendMessage(chatId, "Could not find the command!");
-
             }
-        }
 
+        } catch (Exception e) {
+            sendMessage(chatId, e.getMessage());
+        }
     }
 
 
@@ -162,18 +171,21 @@ public class TelegramBot extends TelegramLongPollingBot {
     }
 
 
-
     public String parseMessage(String textMessage) {
 
-        String[] list = textMessage.split(" ");
+            String[] list = textMessage.split(" ");
 
-        String departureAirport = list[1];
-        String arrivalAirport = list[2];
-        String date = list[3];
+            if(list.length==3) {
 
-        return "https://flight-info-api.p.rapidapi.com/schedules?version=v1" + "&DepartureDate="+ date +"&DepartureAirport="+ departureAirport + "&ArrivalAirport=" + arrivalAirport;
+                String departureAirport = list[1];
+                String arrivalAirport = list[2];
+                String date = list[3];
 
-
+                return "https://flight-info-api.p.rapidapi.com/schedules?version=v1" + "&DepartureDate=" + date + "&DepartureAirport=" + departureAirport + "&ArrivalAirport=" + arrivalAirport;
+            }
+            else {
+                throw new FlightsException("Not enough data");
+            }
     }
 
 
