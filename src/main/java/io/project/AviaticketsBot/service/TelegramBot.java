@@ -175,13 +175,13 @@ public class TelegramBot extends TelegramLongPollingBot {
 
             String[] list = textMessage.split(" ");
 
-            if(list.length==3) {
+            if(list.length==4) {
 
                 String departureAirport = list[1];
                 String arrivalAirport = list[2];
                 String date = list[3];
 
-                return "https://flight-info-api.p.rapidapi.com/schedules?version=v1" + "&DepartureDate=" + date + "&DepartureAirport=" + departureAirport + "&ArrivalAirport=" + arrivalAirport;
+                return "https://flight-info-api.p.rapidapi.com/status?version=v1" + "&DepartureDate=" + date + "&DepartureAirport=" + departureAirport + "&ArrivalAirport=" + arrivalAirport;
             }
             else {
                 throw new FlightsException("Not enough data");
