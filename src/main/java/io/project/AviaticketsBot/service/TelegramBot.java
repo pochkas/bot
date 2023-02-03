@@ -101,7 +101,7 @@ public class TelegramBot extends TelegramLongPollingBot {
                         FlightResponse flightData = flightService.getFlights(response);
                         List<String> list = new ArrayList<>();
                         for (int i = 0; i < flightData.data.length; i++) {
-                            list.add((i + 1 + ") ") + flightData.data[i].toString() + "\n");
+                            list.add((i + 1 + ") "+EmojiParser.parseToUnicode(" :airplane: ")) + flightData.data[i].toString() + "\n");
                         }
 
                         for (String l : list) {

@@ -1,5 +1,6 @@
 package io.project.AviaticketsBot.model;
 
+import com.vdurmont.emoji.EmojiParser;
 import lombok.*;
 
 import java.io.Serializable;
@@ -41,9 +42,8 @@ public class Data implements Serializable {
 
     @Override
     public String toString() {
-        return "Flights: " +
-                "departure=" + getDeparture() +
-                ", flightNumber=" + getFlightNumber() +
+        return EmojiParser.parseToUnicode(" :alarm_clock: ") + getDeparture() +
+                ", flight number=" + getFlightNumber() +
                 ";";
     }
 
