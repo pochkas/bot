@@ -28,11 +28,11 @@ public class FlightServiceImpl implements FlightService {
     BotConfig botConfig;
     @Autowired
     RestTemplate restTemplate;
-//    public FlightServiceImpl(BotConfig botConfig, RestTemplate restTemplate) {
-//
-//        this.botConfig = botConfig;
-//        this.restTemplate=restTemplate;
-//    }
+    public FlightServiceImpl(BotConfig botConfig, RestTemplate restTemplate) {
+
+        this.botConfig = botConfig;
+        this.restTemplate=restTemplate;
+    }
 
 
 

@@ -50,7 +50,7 @@ public class FlightServiceTest {
     BotConfig botConfig;
 
     @InjectMocks
-    private FlightService flightService = new FlightServiceImpl();
+    private FlightService flightService;
 
     @Test
     public void getFlightsTestError() {
