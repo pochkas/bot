@@ -1,152 +1,312 @@
-2023-01-08 18:00:13,205 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 9604 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 18:00:13,210 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 18:00:13,993 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 18:00:14,001 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:00:14,001 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 18:00:14,002 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 18:00:14,101 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 18:00:14,101 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 838 ms
-2023-01-08 18:00:14,935 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:00:14,947 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate
-2023-01-08 18:00:14,949 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Executor] Index 1 out of bounds for length 1
-java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at io.project.AviaticketsBot.service.TelegramBot.parseMessage(TelegramBot.java:169)
-	at io.project.AviaticketsBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:101)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
-	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
-2023-01-08 18:00:14,953 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 18:00:14,960 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 2.034 seconds (JVM running for 2.583)
-2023-01-08 18:00:18,219 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 18:00:18,226 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 18:11:36,969 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Config data resource 'class path resource [src/main/resources/secret.properties]' via location 'src/main/resources/secret.properties' does not exist
-
-Action:
-
-Check that the value 'src/main/resources/secret.properties' at class path resource [application.properties] - 1:22 is correct, or prefix it with 'optional:'
-
-2023-01-08 18:11:59,897 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 13628 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 18:11:59,899 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 18:12:00,572 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 18:12:00,579 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:12:00,579 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 18:12:00,579 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 18:12:00,652 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 18:12:00,653 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 711 ms
-2023-01-08 18:12:01,432 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:12:01,451 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 18:12:01,460 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.821 seconds (JVM running for 2.214)
-2023-01-08 18:12:09,708 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 18:12:09,715 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 18:13:48,314 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 22824 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 18:13:48,316 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 18:13:48,999 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 18:13:49,006 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:13:49,006 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 18:13:49,006 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 18:13:49,079 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 18:13:49,080 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 720 ms
-2023-01-08 18:13:49,811 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:13:49,828 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 18:13:49,838 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.78 seconds (JVM running for 2.17)
-2023-01-08 18:13:56,825 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 18:13:56,833 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 18:13:57,299 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Executor] 401 Unauthorized: "{"message":"Invalid API key. Go to https:\/\/docs.rapidapi.com\/docs\/keys for more info."}"
-org.springframework.web.client.HttpClientErrorException$Unauthorized: 401 Unauthorized: "{"message":"Invalid API key. Go to https:\/\/docs.rapidapi.com\/docs\/keys for more info."}"
-	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:105)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
-	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
-	at io.project.AviaticketsBot.service.implementation.FlightServiceImpl.getFlights(FlightServiceImpl.java:36)
-	at io.project.AviaticketsBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:102)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
-	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
-2023-01-08 18:14:32,130 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 16544 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 18:14:32,132 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 18:14:32,840 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 18:14:32,848 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:14:32,848 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 18:14:32,848 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 18:14:32,925 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 18:14:32,925 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 751 ms
-2023-01-08 18:14:33,680 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 18:14:33,696 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 18:14:33,704 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.839 seconds (JVM running for 2.244)
-2023-01-08 18:14:40,200 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 18:14:40,207 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 18:14:40,620 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Executor] 401 Unauthorized: "{"message":"Invalid API key. Go to https:\/\/docs.rapidapi.com\/docs\/keys for more info."}"
-org.springframework.web.client.HttpClientErrorException$Unauthorized: 401 Unauthorized: "{"message":"Invalid API key. Go to https:\/\/docs.rapidapi.com\/docs\/keys for more info."}"
-	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:105)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
-	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:819)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:777)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
-	at io.project.AviaticketsBot.service.implementation.FlightServiceImpl.getFlights(FlightServiceImpl.java:36)
-	at io.project.AviaticketsBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:102)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
-	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
-2023-01-08 19:08:22,484 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 2664 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 19:08:22,487 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 19:08:23,796 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 19:08:23,810 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 19:08:23,811 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 19:08:23,811 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 19:08:23,941 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 19:08:23,942 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1366 ms
-2023-01-08 19:08:25,209 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 19:08:25,234 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 19:08:25,245 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 3.295 seconds (JVM running for 4.038)
-2023-01-08 19:08:27,474 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 19:08:27,488 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 19:08:27,494 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Executor] Cannot invoke "io.project.AviaticketsBot.config.BotConfig.getRapidApiKey()" because "this.botConfig" is null
-java.lang.NullPointerException: Cannot invoke "io.project.AviaticketsBot.config.BotConfig.getRapidApiKey()" because "this.botConfig" is null
-	at io.project.AviaticketsBot.service.implementation.FlightServiceImpl.getFlights(FlightServiceImpl.java:44)
-	at io.project.AviaticketsBot.service.TelegramBot.onUpdateReceived(TelegramBot.java:102)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
-	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
-2023-01-08 19:14:34,336 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 20428 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 19:14:34,338 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 19:14:35,032 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 19:14:35,041 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 19:14:35,041 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 19:14:35,041 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 19:14:35,122 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 19:14:35,122 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 745 ms
-2023-01-08 19:14:35,842 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 19:14:35,857 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 19:14:35,864 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.811 seconds (JVM running for 2.199)
-2023-01-08 19:14:41,162 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 19:14:41,167 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 19:17:05,837 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 10564 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
-2023-01-08 19:17:05,839 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
-2023-01-08 19:17:06,533 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
-2023-01-08 19:17:06,540 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
-2023-01-08 19:17:06,540 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
-2023-01-08 19:17:06,540 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
-2023-01-08 19:17:06,615 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
-2023-01-08 19:17:06,616 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 737 ms
-2023-01-08 19:17:07,490 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
-2023-01-08 19:17:07,514 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
-2023-01-08 19:17:07,525 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.946 seconds (JVM running for 2.327)
-2023-01-08 19:17:12,081 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate LGW IST 2023-01-12
-2023-01-08 19:17:12,087 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=LGW&ArrivalAirport=IST
-2023-01-08 19:17:29,038 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Commands 0fromtodate IST LGW 2023-01-12
-2023-01-08 19:17:29,041 INFO io.project.AviaticketsBot.service.implementation.FlightServiceImpl [@flighttick_bot Telegram Executor] https://flight-info-api.p.rapidapi.com/schedules?version=v1&DepartureDate=2023-01-12&DepartureAirport=IST&ArrivalAirport=LGW
+2023-02-03 00:24:43,202 WARN org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] {"ok":false,"error_code":502,"description":"Bad Gateway"}
+2023-02-03 00:25:59,352 INFO org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:280)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:306)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:347)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:800)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 00:33:35,431 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] api.telegram.org:443 failed to respond
+org.apache.http.NoHttpResponseException: api.telegram.org:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 04:04:49,890 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:320)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:347)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:800)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 04:04:50,405 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Этот хост неизвестен (api.telegram.org)
+java.net.UnknownHostException: Этот хост неизвестен (api.telegram.org)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1648)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1638)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1504)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 16:45:33,891 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:320)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:347)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:800)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 16:45:34,414 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Этот хост неизвестен (api.telegram.org)
+java.net.UnknownHostException: Этот хост неизвестен (api.telegram.org)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1048)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1648)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:997)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1638)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1504)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 20:56:06,747 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Replied to user Svetlana
+2023-02-03 21:08:48,964 INFO io.project.AviaticketsBot.service.TelegramBot [@flighttick_bot Telegram Executor] Replied to user Svetlana
+2023-02-03 21:09:13,170 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 28056 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
+2023-02-03 21:09:13,172 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-03 21:09:13,922 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-02-03 21:09:13,930 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-02-03 21:09:13,931 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-02-03 21:09:13,931 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-02-03 21:09:14,037 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-02-03 21:09:14,038 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 828 ms
+2023-02-03 21:09:14,895 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:14,937 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-02-03 21:09:14,953 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-03 21:09:14,960 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 2.073 seconds (JVM running for 2.576)
+2023-02-03 21:09:18,508 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:19,054 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:22,609 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:23,156 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:26,709 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:27,258 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:30,809 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:31,359 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:34,919 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:35,468 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:39,007 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:39,590 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:43,152 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:43,712 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:49,528 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Starting AviaticketsBotApplication using Java 18.0.2.1 on Svetlana with PID 10204 (C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot\target\classes started by lavsv in C:\Users\lavsv\Downloads\openjdk-18.0.2.1_windows-x64_bin\jdk-18.0.2.1\TEACH2022\bot)
+2023-02-03 21:09:49,530 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-02-03 21:09:50,217 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-02-03 21:09:50,228 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-02-03 21:09:50,229 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-02-03 21:09:50,229 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.64]
+2023-02-03 21:09:50,325 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-02-03 21:09:50,326 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 755 ms
+2023-02-03 21:09:51,071 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:51,113 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-02-03 21:09:51,128 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-03 21:09:51,135 INFO io.project.AviaticketsBot.AviaticketsBotApplication [main] Started AviaticketsBotApplication in 1.877 seconds (JVM running for 2.256)
+2023-02-03 21:09:54,677 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:55,224 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:58,774 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:09:59,318 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:10:02,969 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:10:03,530 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:10:07,084 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:10:07,637 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:10:11,189 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:10:11,748 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:10:15,306 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2023-02-03 21:10:15,853 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [@flighttick_bot Telegram Connection] Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error getting updates: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:93)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:260)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)

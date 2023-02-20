@@ -42,4 +42,17 @@ public class Departure implements Serializable {
         return getPassengerLocalTime() + ", "+"terminal="+getTerminal();
     }
 
+    @Override
+    public boolean equals(Object o){
+
+        if(o==this){return true;}
+        if((!(o instanceof Departure))){
+            return false;
+        }
+        Departure obj=(Departure) o;
+
+        return obj.date.equals(date) && obj.passengerLocalTime.equals(passengerLocalTime) && obj.terminal.equals(terminal);
+
+    }
+
 }
