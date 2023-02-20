@@ -70,12 +70,6 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-
 
         <!-- https://mvnrepository.com/artifact/com.heroku.sdk/heroku-deploy -->
         <dependency>
@@ -109,6 +103,8 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
+
+
 
 
     </dependencies>
