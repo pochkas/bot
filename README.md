@@ -8,8 +8,8 @@ Deploy on Heroku.
 Ccылка на сам бот: https://t.me/flighttick_bot
 
 Бот написан с помощью SpringBoot c поддержкой Maven.
-Данные по полетам берутся из RestApi: https://rapidapi.com/oag-oag-default/api/flight-info-api/
-На общение по RestApi написаны Unit-тесты.
+Данные по полетам берутся из: https://rapidapi.com/oag-oag-default/api/flight-info-api/
+Написаны Unit-тесты.
 
 
 
