@@ -1,15 +1,14 @@
 # AviaticketsBot
  
-
-Проект для нахождения авиабилетов из одного аэропорта в другой.
+Project for finding flights from one airport to another.
 
 Deploy on Heroku.
 
-Ccылка на сам бот: https://t.me/flighttick_bot
+The telegram bot: https://t.me/flighttick_bot
 
-Бот написан с помощью SpringBoot c поддержкой Maven.
-Данные по полетам берутся из: https://rapidapi.com/oag-oag-default/api/flight-info-api/
-Написаны Unit-тесты.
+The bot was created with SpringBoot and Maven support.
+Flight data taken from: https://rapidapi.com/oag-oag-default/api/flight-info-api/
+Unit tests are attached.
 
 
 
